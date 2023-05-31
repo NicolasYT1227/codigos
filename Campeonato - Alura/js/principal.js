@@ -5,7 +5,7 @@ const commentPost = document.getElementById('ComentPost');
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-
+    armazenaDados()
     let p = document.createElement('p');
     p.classList = 'p-2 d-flex text-wrap flex-wrap';
     p.innerHTML = `<strong>${inputName.value}: </strong> &nbsp ${textComment.value}`;
